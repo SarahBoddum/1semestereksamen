@@ -1,0 +1,91 @@
+
+/*billedekarusel motherfucking!!*/
+.container {
+    position: relative;
+    display: block;
+    width: 100%;
+  min-height: 900px;
+    margin: 0 auto;
+  }
+    .pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-animation: fade 63s infinite;
+    animation: fade 63s infinite;
+  }
+  #pic1 {
+    animation-delay: 0s;
+    background-image: url(images/a.png);
+  }
+  #pic2 {
+    animation-delay: 7s;
+    background-image: url(images/b.png);
+  }
+  #pic3 {
+    animation-delay: 14s;
+    background-image: url(images/c.png);
+  }
+  #pic4 {
+    animation-delay: 21s;
+    background-image: url(images/d.png);
+  }
+  #pic5 {
+    animation-delay: 28s;
+    background-image: url(images/e.png);
+  }
+  #pic6 {
+    animation-delay: 35s;
+    background-image: url(images/f.png);
+  }
+  #pic7 {
+    animation-delay: 42s;
+    background-image: url(images/g.png);
+  }
+  #pic8 {
+    animation-delay: 49s;
+    background-image: url(images/h.png);
+  }
+  #pic9 {
+    animation-delay: 56s;
+    background-image: url(images/i.png);
+  }
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    8% {
+      opacity: 1;
+    }
+    11% {
+      opacity: 0;
+    }
+    97% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    8% {
+      opacity: 1;
+    }
+    11% {
+      opacity: 0;
+    }
+    97% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
