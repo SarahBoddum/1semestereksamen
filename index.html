@@ -11,8 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Poiret+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -22,7 +22,93 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
+    <header>
+        <!--Logo-->
+        <a id="logo" href="index.html"><img src="fotos/magpielanelogo.png" alt="Magpie Lane logo"></a>
+    
+        <!--Knapperne i headeren-->  
+        <nav>
+                    <div class="dropdown">
+                        <a href="nawa.html">KLUB NAWA</a>
+                            <div class="dropdown-content">
+                                <span>
+                                    <a href="nawa.html">Klub NAWA</a><br>
+                                </span>
+                                <span>
+                                    <a href="nawa.html#helenasreb">Helenas reb</a><br>
+                                </span>
+                                <span>
+                                    <a href="nawa.html#3stadier">3 stadier</a><br>
+                                </span>
+                            </div>
+                    </div>
+    
+                    <div class="dropdown">
+                        <a href="tucan.html">TUCAN CLUB</a>
+                            <div class="dropdown-content">
+                                <span>
+                                    <a href="tucan.html">TUCAN Club</a><br>
+                                </span>
+                                <span>
+                                    <a href="#">Rum</a><br>
+                                </span>
+                                <span>
+                                    <a href="#">Swinging 20's</a><br>
+                                </span>
+                            </div>
+                    </div>
+    
+                    <div class="dropdown">
+                        <a href="kinkclub.html">KINKCLUB</a>
+                            <div class="dropdown-content">
+                                <span>
+                                    <a href="kinkclub.html">KinkClub</a><br>
+                                </span>
+                                <span>
+                                    <a href="#">?</a><br>
+                                </span>
+                                <span>
+                                    <a href="#">?</a><br>
+                                </span>
+                            </div>
+                    </div> 
+        </nav>
+    
+        <!--Burger-->
+        <nav id="burgermenu">
+            <div class="navbar">
+                <div class="container nav-container">
+                  <input class="checkbox" type="checkbox" name="" id="" />
+                  <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>  
+                <div class="menu-items">
+                    <a href="index.html"> <img id="burgerlogo" src="fotos/logomagpieart.jpg"></a>
+                    <li><a href="nawa.html">KLUB NAWA</a></li>
+                    <li><a class="ddc" href="nawa.html">Klub NAWA</a></li>
+                    <li><a class="ddc" href="nawa.html#helenasreb">Helenas reb</a></li>
+                    <li><a class="ddc" href="nawa.html#3stadier">3 stadier</a></li></br></br>
+                    
+                    <li><a href="tucan.html">TUCAN CLUB</a></li>
+                    <li><a class="ddc" href="tucan.html">Tucan Club</a></li>
+                    <li><a class="ddc" href="#">Rum</a></li>
+                    <li><a class="ddc" href="#">Swinging 20's</a></li></br></br>
+                    
+                    <li><a href="kinkclub.html">KINKCLUB</a></li>
+                    <li><a class="ddc" href="kinkclub.html">KinkClub</a></li>
+                    <li><a class="ddc" href="#">?</a></li>
+                    <li><a class="ddc" href="#">?</a></li></br></br>
+                    
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+<main>
+    <div class="containerkarusel">
         <div class="pic" id="pic9"></div>
         <div class="pic" id="pic8"></div>
         <div class="pic" id="pic7"></div>
@@ -32,5 +118,7 @@
         <div class="pic" id="pic3"></div>
         <div class="pic" id="pic2"></div>
         <div class="pic" id="pic1"></div>
-      </div>
+    </div>
+
+</main>
 </body>
