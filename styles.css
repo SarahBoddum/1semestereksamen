@@ -4,9 +4,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 #nawabody{
-    background-image: url(images/baggrundnawa1.jpg);
+    background-image: url(images/Nbaggrund.jpg);
     background-size: 100% 100%;
+}
+#nawabody p{
+    color: black;
+    font-size: 20pt;
+    font-family: 'Lato', sans-serif;
+}
+#nawabody h1{
+    color: black;
+}
+#tucanbody{
+    background-image: url(images/tbaggrund.jpg);
+    background-size: 100% 100%;
+}
+#tucanbody p{
+    color: #f2f2f2;
+    font-size: 20pt;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+#tucanbody h1{
+    color: #f2f2f2;
 }
 
 /*----karusel*/
@@ -150,11 +172,7 @@ h1{
     margin-bottom: 100px;
     font-size: 100pt; 
 }
-p{
-    color: black;
-    font-size: 20pt;
-    font-family: 'Lato', sans-serif;
-}
+
 .kasseløsp{
     margin-left: 10%;
     margin-right: 10%;
@@ -337,14 +355,23 @@ header nav a:hover{
     padding-right: 0%;
     padding-left: 10%;
 }
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 200px;
+    gap: 6%;
+    
+}
 /*--------------BOKSE UDEN FLEX-----------*/
 .baggrundstekstur{
     width: 100%;
     height: auto;
     background-image: url(images/nawatexturb.jpg);
     background-size: 100% 100%;
-    padding-top: 40px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 200px;
     margin-top: 200px;
     margin-bottom: 200px;
 }
@@ -352,7 +379,10 @@ header nav a:hover{
     width: 35%;
     height: auto;
 }
-
+.textucan{
+    background-image: url(images/textur1.png);
+    background-size: 100% 100%;
+}
 /*------------FLEX INDHOLD----------*/
 .flex1b1ttekst{
     width: 25%;
@@ -398,7 +428,16 @@ header nav a:hover{
 .mflex2b1tbillede{
     display: none;
 }
-
+.l2btextur{
+    width: 50%;
+    height: auto;
+    display: block;
+}
+.m2btextur{
+    width: 80%;
+    height: auto;
+    display: none;
+}
 @media screen and (max-width: 900px){
    
     p{
@@ -638,6 +677,12 @@ header nav a:hover{
     .freverse{
         padding-left: 0%;
     }
+    .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
     /*-----------FLEX INDHOLD----------------------------------------------*/
     .flex1bt1tekst{
         width: 80%;
@@ -707,6 +752,16 @@ header nav a:hover{
     }
     .lbogtbillede{
         display: none;
+    }
+    .l2btextur{
+        width: 37%;
+        height: auto;
+        display: none;
+    }
+    .m2btextur{
+        width: 80%;
+        height: auto;
+        display: block;
     }
 
 }
