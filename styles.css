@@ -6,8 +6,9 @@
 }
 
 #nawabody{
-    background-image: url(images/Nbaggrund.jpg);
-    background-size: 100% 100%;
+    background-color: #f2f2f2;
+    /*background-image: url(images/Nbaggrund.jpg);
+    background-size: 100% 100%;*/
 }
 #nawabody p{
     color: black;
@@ -17,19 +18,54 @@
 #nawabody h1{
     color: black;
 }
+
 #tucanbody{
-    background-image: url(images/tbaggrund.jpg);
-    background-size: 100% 100%;
+    background-color: #232323;
+    /*background-image: url(images/tbaggrund.jpg);
+    background-size: 100% 100%;*/
 }
 #tucanbody p{
-    color: #f2f2f2;
+    color: white;
     font-size: 20pt;
     font-family: 'Lato', sans-serif;
-    font-weight: lighter;
+    font-weight: bold;
 }
 #tucanbody h1{
     color: #f2f2f2;
 }
+#tucanbody header{
+    background-color: #232323;
+}
+#tucanbody header nav a{
+    color: white;
+}
+#tucanbody .dropdown-content{
+    background-color: #232323;
+}
+
+
+#kinkclubbody{
+    background-color: black;
+}
+#kinkclubbody h1{
+    color: white;
+}
+#kinkclubbody p{
+    color: white;
+    font-size: 20pt;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+#kinkclubbody header{
+    background-color: black;
+}
+#kinkclubbody header nav a{
+    color: white;
+}
+#kinkklubbody .dropdown-content{
+    background-color: black;
+}
+
 
 /*----karusel*/
 .containerkarusel {
@@ -49,44 +85,44 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-animation: fade 63s infinite;
-    animation: fade 63s infinite;
+    -webkit-animation: fade 45s infinite;
+    animation: fade 45s infinite;
   }
   #pic1 {
     animation-delay: 0s;
     background-image: url(images/LkaruselN1.jpg);
   }
   #pic2 {
-    animation-delay: 7s;
+    animation-delay: 5s;
     background-image: url(images/LkaruselT1.jpg);
   }
   #pic3 {
-    animation-delay: 14s;
-    background-image: url(images/c.png);
+    animation-delay: 10s;
+    background-image: url(images/LkaruselK1.jpg);
   }
   #pic4 {
-    animation-delay: 21s;
+    animation-delay: 15s;
     background-image: url(images/LkaruselN2.jpg);
   }
   #pic5 {
-    animation-delay: 28s;
+    animation-delay: 20s;
     background-image: url(images/LkaruselT2.jpg);
   }
   #pic6 {
-    animation-delay: 35s;
-    background-image: url(images/f.png);
+    animation-delay: 25s;
+    background-image: url(images/LkaruselK2.jpg);
   }
   #pic7 {
-    animation-delay: 42s;
+    animation-delay: 30s;
     background-image: url(images/LkaruselN3.jpg);
   }
   #pic8 {
-    animation-delay: 49s;
+    animation-delay: 35s;
     background-image: url(images/LkaruselT3.jpg);
   }
   #pic9 {
-    animation-delay: 56s;
-    background-image: url(images/i.png);
+    animation-delay: 40s;
+    background-image: url(images/LkaruselK3.jpg);
   }
  
  
@@ -95,13 +131,13 @@
     0% {
       opacity: 1;
     }
-    8% {
+    6% {
       opacity: 1;
     }
     11% {
       opacity: 0;
     }
-    97% {
+    95% {
       opacity: 0;
     }
     100% {
@@ -112,13 +148,13 @@
     0% {
       opacity: 1;
     }
-    8% {
+    6% {
       opacity: 1;
     }
     11% {
       opacity: 0;
     }
-    97% {
+    95% {
       opacity: 0;
     }
     100% {
@@ -172,7 +208,13 @@ h1{
     margin-bottom: 100px;
     font-size: 100pt; 
 }
-
+.kasseløsphvid{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 200px;
+    font-weight:bolder;
+    color: rgb(255, 255, 255);
+}
 .kasseløsp{
     margin-left: 10%;
     margin-right: 10%;
@@ -181,6 +223,7 @@ h1{
 .fed{
     font-weight:bolder;
 }
+
 /*---------------------------------BODY--------------------------------*/
 body a{
     text-decoration: none;
@@ -190,9 +233,14 @@ body a:hover{
     text-decoration: underline;
     
 }
+
 /*---------------------------------------HEADER--------------------------------*/
 #burgermenu{
     display: none; /*dækker over den ekstra menu - burgermenuen - der ikke skal vises på laptop*/
+}
+.anchor{
+    min-height: 2px;
+    opacity: 0;
 }
 header{
     display: flex;
@@ -206,11 +254,6 @@ header{
     background-color: #f2f2f2;
 }
 
-#logo{
-    width: 20%;
-    padding-left: 2%;
-}
-
 header nav{
     display: flex;
     justify-content: space-around;
@@ -218,11 +261,16 @@ header nav{
 }
 
 header nav a{
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 35px;
+    padding-right: 35px;
     text-decoration:none;
     color: #666666;
     font-family: 'Lato', sans-serif;
+}
+#logo{
+    width: 89px;
+    left: 0px;
+    padding-top: 20px;
 }
 header nav a:hover{
     text-decoration: underline;
@@ -240,11 +288,17 @@ header nav a:hover{
     color: #666666;
     position: absolute;
     z-index: 1;
-    min-width: 240px;
+    min-width: 300px;
     background-color: #f2f2f2;
     text-align: left;
     font-size: 15px;
     padding: 10px;
+}
+#tucanbody .dropdown-content{
+    background-color: #232323;
+}
+#kinkclubbody .dropdown-content{
+    background-color: black;
 }
 .dropdown-content a:hover{
     text-decoration: none;
@@ -335,11 +389,15 @@ header nav a:hover{
     width: 100%;
     height: auto;
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 0px;
     justify-content: space-between;
     gap: 5%;
     margin-top: 200px;
     margin-bottom: 50px;
+}
+.columnreverse{
+    padding-left: 0px;
+    padding-right: 10%;
 }
 .flex2b1t{
     display: flex;
@@ -368,7 +426,7 @@ header nav a:hover{
 .baggrundstekstur{
     width: 100%;
     height: auto;
-    background-image: url(images/nawatexturb.jpg);
+    background-image: url(images/nawatextur.jpg);
     background-size: 100% 100%;
     padding-top: 100px;
     padding-bottom: 200px;
@@ -383,14 +441,27 @@ header nav a:hover{
     background-image: url(images/textur1.png);
     background-size: 100% 100%;
 }
+.texkinkclub{
+    background-image: url(images/texkinkclub.jpg);
+    background-size: 100% 100%;
+}
+#sawaru{
+    width: 30%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    display: block;
+}
 /*------------FLEX INDHOLD----------*/
 .flex1b1ttekst{
     width: 25%;
     height: auto;
 }
 .Lflex1b1tbillede{
-    width: 43%;
+    width: 50%;
     height: auto;
+    padding-right: 0px;
     display: block;
 }
 .Mflex1b1tbillede{
@@ -470,7 +541,10 @@ header nav a:hover{
         width: 100%;
         margin: auto;
       }
-      
+    .burgerlogo{
+        padding-top: 70px;
+        padding-left: 30px;
+    } 
     .navbar {
         width: 100%;
     }
@@ -565,8 +639,13 @@ header nav a:hover{
         text-align: center;
         line-height: 10PX;
     }
-    
-      
+    #tucanbody .navbar .menu-items{
+        background-color: #232323;
+    }
+    #kinkclubbody .navbar .menu-items{
+        background-color: black;
+    }
+   
     .navbar .menu-items li { /*tekststørrelse, -type og den slags*/
         margin-bottom: 1.2rem;
         font-size: 1.5rem;
@@ -621,7 +700,7 @@ header nav a:hover{
       }
       #pic3 {
         animation-delay: 14s;
-        background-image: url(images/c.png);
+        background-image: url(images/MkaruselK1.jpg);
       }
       #pic4 {
         animation-delay: 21s;
@@ -633,7 +712,7 @@ header nav a:hover{
       }
       #pic6 {
         animation-delay: 35s;
-        background-image: url(images/f.png);
+        background-image: url(images/MkaruselK2.jpg);
       }
       #pic7 {
         animation-delay: 42s;
@@ -645,7 +724,7 @@ header nav a:hover{
       }
       #pic9 {
         animation-delay: 56s;
-        background-image: url(images/i.png);
+        background-image: url(images/MkaruselK3.jpg);
       }
 
 
@@ -661,7 +740,14 @@ header nav a:hover{
         width: 100%;
         margin-top: 50px;
     }
-
+    #sawaru{
+        width: 50%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 50px;
+        display: block;
+    }
     /*--------------FLEXBOKSE---------------------------------------------*/
     .flex1b1t{
         flex-direction: column;
@@ -682,6 +768,9 @@ header nav a:hover{
         flex-direction: column;
         align-items: center;
         margin: auto;
+    }
+    .columnreverse{
+        flex-direction: column-reverse;
     }
     /*-----------FLEX INDHOLD----------------------------------------------*/
     .flex1bt1tekst{
@@ -763,5 +852,11 @@ header nav a:hover{
         height: auto;
         display: block;
     }
-
+    .video{
+        display: block;
+    }
+    .tekstreverse{
+        padding-bottom: 100px;
+        padding-top: 0px;
+    }
 }
