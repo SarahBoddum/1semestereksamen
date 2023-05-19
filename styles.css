@@ -26,6 +26,9 @@
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 }
+#tucanbody a{
+    color: white;
+}
 #tucanbody h1{
     color: #f2f2f2;
 }
@@ -51,6 +54,9 @@
     font-size: 20pt;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
+}
+#kinkclubbody a{
+    color: white;
 }
 #kinkclubbody header{
     background-color: black;
